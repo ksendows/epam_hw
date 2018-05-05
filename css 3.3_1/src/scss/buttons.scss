@@ -1,0 +1,25 @@
+.buttons {
+    &__item {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        border-radius: 15%;
+    }
+    &__check {
+        display: none;
+    }
+}
+#btn-orange:checked + label ~ .item--orange {
+    display: none;
+}
+#btn-yellow:checked + label ~ .item--yellow {
+    display: none;
+}
+#btn-cyan:checked + label ~ .item--cyan {
+    display: none;
+}
+#btn-purple:checked + label ~ .item--purple {
+    display: none;
+}
+

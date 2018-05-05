@@ -1,0 +1,16 @@
+.meter {
+    display: block;
+    width: 50%;
+    margin: 20px;
+
+    &::-webkit-meter-bar {background: white;}
+    &--orange::-webkit-meter-optimum-value {
+        background: orange;
+    }
+    &--yellow::-webkit-meter-optimum-value {
+        background: yellow;
+    }
+    &--cyan::-webkit-meter-optimum-value {
+        background:cyan;
+    }
+}
