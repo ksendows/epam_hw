@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(43, 41, 41);
+}
+.header {
+    position: relative;
+    width: 100%;
+    background-color: darkcyan;
+    height: 100px;
+    display: flex;
+}
+.header__logo {
+    flex-basis: 20%;
+}
+.header__logo__image {
+    width: 100px;
+    height: 100px;
+}
+.header__menu {
+    flex-basis: 80%;
+}
+.burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.burger__line {
+    width: 50px;
+    height: 10px;
+    border-bottom: white 2px solid;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu__item {
+    padding: 10px;
+}
+.menu__item__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+.main {
+    background-color: grey;
+}
+.main__wrapper {
+    box-sizing: border-box;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px;
+}
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product {
+    display: flex;
+    flex-direction: row;
+}
+.product__slogan {
+    padding: 10px;
+}
+.company__name {
+    text-align: center;
+    padding: 20px;  
+}
+.advantages__title, .contacts__title {
+    padding: 10px;
+    text-transform: uppercase;
+}
+.advantages-list {
+    list-style: none;
+}
+.advantages-list__item {
+    padding: 10px;
+    display: flex;
+}
+.advantages-list__icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts__item {
+    padding: 10px;
+}
+.contacts__map {
+    width: 600px;
+    height: 450px
+}
+.footer {
+    width: 100%;
+    background-color: darkcyan;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__copyright {
+    flex-basis: 30%;
+    color: white;
+    padding: 10px;
+}
+.footer__socials {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.socials__item__logo {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1200px) {
+    .footer__socials {
+        flex-basis: 15%;
+    }
+}
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile--open {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color:  darkcyan;
+        z-index: 1;
+    }
+    .product {
+        flex-direction: column;
+    }
+    .contacts-container {
+        flex-direction: column;
+    }
+    .contacts__map {
+        width: 300px;
+        height: 225px;
+    }
+    .footer__socials {
+        flex-basis: 20%;
+    }
+}
+@media (max-width: 640px) {
+    .footer__socials {
+        flex-basis: 25%;
+    }
+}

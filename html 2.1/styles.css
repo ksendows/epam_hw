@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(43, 41, 41);
+}
+.header {
+    position: relative;
+    width: 100%;
+    background-color: darkcyan;
+    height: 100px;
+    display: flex;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none; 
+}
+
+.menu__item {
+    padding: 20px;
+    text-transform: uppercase;
+}
+.menu__item__link {
+    text-decoration: none;
+    color: white;
+}
+.main {
+    background-color: white;
+}
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2 {
+    padding: 20px;
+}
+.footer {
+    width: 100%;
+    background-color: darkcyan;
+    height: 80px;
+}

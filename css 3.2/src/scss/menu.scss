@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 5px;
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+        &--italic {
+            font-style: italic;
+        }
+        &--small {
+            font-size: 0.8em;
+        }
+    }
+}

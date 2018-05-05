@@ -1,0 +1,136 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML hometask</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <template>
+        <h2>Frontend</h2>
+        <picture>
+            <source media="(max-width: 650px)" srcset="frontend.png">
+            <source media="(min-width: 650px)" srcset="frontend_big.jpeg">
+            <img src="frontend.png" alt="Frontend" style="width:auto;">
+        </picture>
+    </template>
+
+
+    <header class="header">
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#articles" class="menu__item__link">Articles</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#media" class="menu__item__link">Media</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">Main
+        
+        <section class="section">
+            <button>click for Frontend</button>
+            <h2 id="articles">Articles</h2>
+            <a name="articles"></a>
+            <form action="" method="get">
+                <p>Select technology:</p>
+                <input list="technologies" name="technology">
+                <datalist id="technologies">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Javascript">
+                </datalist>
+                <input type="submit">
+            </form>
+            <article>
+                <h2>HTML</h2>
+                <p>HTML is the standard markup language for creating 
+                    WebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWebWeb<wbr/>pagespagespagespagespagespagespagespagespages.</p>
+            </article>
+            <article>
+                <h2>CSS</h2>
+                <p>CSS stands for Cascading Style Sheets CSS describes how
+                     HTML elements are to be displayed on screen, paper, or in other media</p>
+                <figure>
+                    <img src="https://appendto.com/wp-content/uploads/2016/05/css3-420x210.jpg" alt="css3">
+                    <figcaption>Fig1. - CSS logo</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h2>Javascript</h2>
+                <p>JavaScript is the <mark>language</mark> of HTML and the Web.</p>
+            </article>
+            <article>
+                <h2><bdi>إيان</bdi></h2>
+                <p>Arabic text</p>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Media</h2>
+            <a name="media"></a>
+            <h3>Audio</h3>
+            <audio autoplay controls muted>
+                <source src="media/star-wars-theme-song.mp3" type="audio/mpeg"> 
+                Your browser does not support the audio tag.
+            </audio>
+
+            <h3>Video</h3>
+            <p>Video was recorder on <time datetime="2018-04-24 10:00"> 24th of April, 2018</time>.</p> 
+            <div>Downloading progress: 
+                <progress value="30" max="100">
+                </progress>
+            </div>
+            <video width="320" controls muted autoplay crossorigin="use-credentials">
+                <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+                <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default="">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>Video has got a rating:</p>
+            <p>by viewers
+                <meter low="20" high="80" max="100" value="55"></meter>
+            </p>
+            <p>by critics
+                <meter low="20" high="80" max="100" value="25"></meter>
+            </p>
+            
+            <details>
+                <summary>Show/Hide video details</summary>
+                <p>Some hidden video details</p>
+            </details>
+
+            <h3>Embed video</h3>
+            <!-- <embed type="video/quicktime" src="movie.mov" width="640" height="480"> -->
+        </section>
+
+        <section>
+            <h2>Sum calculation</h2>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                <input type="number" id="a" value="50">+
+                <input type="number" id="b" value="50"> =
+                <output name="x" for="a b"></output>
+            </form>
+        </section>
+
+        <section>
+            <h2>Canvas</h2>
+            <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+        </section>
+
+    </main>
+
+    <aside>Aside
+    </aside>
+
+    <footer class="footer">Footer
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>

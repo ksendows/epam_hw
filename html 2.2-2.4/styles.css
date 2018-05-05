@@ -1,0 +1,23 @@
+.list--square {
+    list-style-type: square;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+table, th, td {
+    padding: 15px;
+    border: 1px solid black;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.wide {
+    width: 40%;
+}

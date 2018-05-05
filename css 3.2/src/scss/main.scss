@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Bespoke-ATOjFOIw6u;
+    src: url(../fonts/Bespoke-ATOjFOIw6u.ttf);
+}
+.wrapper {
+    padding: 20px;
+    background-image: url('../images/vector-old-paper-texture-background.jpg');
+    background-size: cover;
+}
+.title, .subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-family: Bespoke-ATOjFOIw6u;
+}
+.title {
+    font-size: 5em;
+    border-bottom: 2px solid black;
+}
+.subtitle {
+    font-size: 2em;
+}
+.paragraph {
+    padding: 10px;
+}
