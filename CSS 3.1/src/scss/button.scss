@@ -1,0 +1,68 @@
+@import "variables";
+
+.button {
+        display: block;
+        height: 45px;
+        width: 140px;
+        border: none;
+        padding: 0;
+        background-color: black;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font: bold 0.875rem 'PT Sans Narrow', sans-serif;
+        line-height: 45px;
+        color: $color-white;
+
+        @media screen and (max-width: 1023px){
+            width: 110px;   
+        }  
+        &:active, &:hover, &:focus {
+            background-color: $color-brown;
+            outline:0;
+        }
+        &--link {
+            display: block;
+            margin: 0 auto;
+            text-decoration: none;
+            color: $color-white;
+
+            &:active, &:hover {
+                color: black;
+                background-color: $color-white;
+            }
+            &:active, &:hover>.socials__logo path{
+                fill: currentColor;
+            }
+        }
+        &--long {
+            width: 100%;
+
+            @media screen and (max-width: 1023px){
+                width: 100%;   
+            } 
+        }
+        &--short {
+            width: 78px;
+            height: 43px;
+        }
+        &--low {
+            margin-top: 7px;
+            margin-left: -2px;
+        }
+        &__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 97%;
+
+            &--narrow {
+                width: 80%;
+
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+            }
+        }
+}

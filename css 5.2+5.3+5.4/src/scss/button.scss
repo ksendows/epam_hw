@@ -1,0 +1,170 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+.button {
+    width: 170px;
+    height: 35px;
+    margin: 10px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+
+    &--lightgreen {
+        background-color: lightgreen;
+    }
+    &--green {
+        background-color: green;
+    }
+    &--yellow {
+        background-color: rgb(255, 230, 0);
+    }
+    &--darkyellow {
+        background-color: rgb(255, 196, 0);
+    }
+    &--lightblue {
+        background-color: lightblue;
+    }
+    &--blue {
+        background-color: blue;
+    }
+    &--orange {
+        background-color: orange;
+    }
+    &--darkorange {
+        background-color:rgb(255, 102, 0);
+    }
+    &--lightpurple {
+        background-color: rgb(180, 68, 180);
+    }
+    &--purple {
+        background-color: purple;
+    }
+    &--red {
+        background-color: red;
+    }
+    &--darkred {
+        background-color: darkred;
+    }
+    &--cyan {
+        background-color: cyan;
+    }
+    &--darkblue {
+        background-color: darkblue;
+    }
+    &--grey {
+        background-color: grey;
+    }
+    &--lightgrey {
+        background-color: lightgray;
+    }
+
+    &--rounded {
+        border-radius: 15px;
+    }
+    &--rounded-top {
+        border-radius: 15px 0;
+    }
+    &--rounded-bottom {
+        border-radius: 0 15px;
+    }
+
+    &__icon {
+        position: relative;
+        
+        &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                background-image: url("../images/icons.png");
+                left: 83%;
+                top: 26%;
+        }
+        &--basic {
+            &::after {
+                background-position: -243px 0;
+            }
+        }
+        &--round {
+            &::after {
+                background-position: -276px 0;
+            }
+        }
+        &--vertical {
+            &::after {
+                background-position: -276px 0;
+            }
+        }
+        &--zoom {
+            &::after {
+                background-position: -191px 0;
+            }
+        }
+        &--bell {
+            &::after {
+                background-position: -227px 0;
+            }
+        }
+        &--rotate {
+            &::after {
+                background-position: -209px 0;
+            }
+        }
+        &--square {
+            &::after {
+                background-position: -172px 0;
+            }
+        }
+        &--horizontal {
+            &::after {
+                background-position: -153px 0;
+            }
+        }
+        &--shrink {
+            &::after {
+                background-position: -134px 0;
+            }
+        }
+        &--up {
+            &::after {
+                background-position: -97px 0;
+            }
+        }
+        &--down {
+            &::after {
+                background-position: -116px 0;
+            }
+        }
+        &--move-up {
+            &::after {
+                background-position: -59px 0;
+            }
+        }
+        &--bounce {
+                &::after {
+                    background-position: -20px 0;
+                }
+        }
+        &--expand {
+            &::after {
+                background-position: -40px 0;
+            }
+        }
+        &--shadow {
+            &::after {
+                background-position: -78px 0;
+            }
+        }
+        &--shake {
+            &::after {
+                background-position: 0 0;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,40 @@
+.socials {
+    @media screen and (max-width: 767px){
+        width: 50%;
+    } 
+    &__title {
+        text-align: left;
+        margin: 0 auto;
+        padding: 0 17px 14px;
+        
+        @media screen and (max-width: 767px){
+            text-align: center; 
+        } 
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 141px;
+
+        @media screen and (max-width: 767px){
+            margin: 0 auto;   
+        } 
+    }
+    &__item {
+        width: 43px;
+        height: 43px;
+        background-color: #000000;
+    }
+    &__link {
+        width: 43px;
+        height: 43px;
+    }
+    &__logo {
+        display: block;
+        width: 23px;
+        height: 23px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS4 Task 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="form" id="login_form">
+        <p class="title">Sign in\Register:</p>    
+        <div class="form_item">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+        </div> 
+        <div class="form_item">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minLength="6" required placeholder="6 characters minimum" />
+        </div>    
+        <input type="submit" value="Sign in\Register" class="submitButton">
+    </form>
+
+        <form class="form" id="search_form">        
+            <div class="form_item">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" />
+            </div>
+            <input type="submit" value="Search" class="submitButton">        
+        </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

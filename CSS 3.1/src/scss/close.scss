@@ -1,0 +1,27 @@
+.close {
+    position: absolute;
+    top: 9px;
+    right: -45px;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+
+    @media screen and (max-width: 540px){
+        right: 0;
+    }
+    &__axis {
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        width: 26px;
+        transform: rotate(45deg);
+        border-bottom: 4px solid #d0d0d0;
+    
+        @media screen and (max-width: 540px){
+            border-bottom: 4px solid black;
+        }
+        &--cross {
+            transform: rotate(135deg);
+        }
+    }        
+}

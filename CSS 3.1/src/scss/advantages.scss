@@ -1,0 +1,56 @@
+@import "variables.scss";
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: 500px){
+        flex-direction: column;    
+    }
+    &__item {
+        width: 32%;
+        color: $color-white;
+        text-transform: uppercase;
+            
+        @media screen and (max-width: 500px){
+            width: 80%;  
+            margin: 0 auto; 
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 0.733em 0 0.933em;
+        font-size: 1.9rem;
+        text-align: center;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 87%;
+            left: 50%;
+            width: 0.667em;
+            height: 0.667em;
+            margin: 0 auto;
+            background-color: #fff;
+            transform: translateX(-50%) rotate(45deg);
+        }
+        @media screen and (max-width: 500px){
+            font-size: 1.5625rem;
+        }
+    }
+    &__text {
+        padding: 40px 0 28px;
+        line-height: 24px;
+        text-align: center;
+
+        &--top-row {
+            padding-bottom: 0;
+        }
+        &--bottom-row {
+            padding-top: 0;
+        }
+    }
+}

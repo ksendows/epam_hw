@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 49px;
+        
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+    &__column {
+        width: 50%;
+        
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

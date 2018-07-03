@@ -1,0 +1,88 @@
+.menu__container {
+    display: none;
+    justify-content: space-around;
+}
+
+.menu {
+    width: 50%;
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 15px;
+    color: black;
+}
+
+.menu__link:hover {
+    color: brown;
+}
+
+#slider {
+    position: relative;
+    width: 300px;
+    height: 300px;
+	overflow: hidden;
+}
+
+#slider_wrapper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 4s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide1 {
+    background-image: url(./images/photo1);
+}
+.slide2 {
+    background-image: url(./images/photo2);
+}
+.slide3 {
+    background-image: url(./images/photo3);
+}
+.slide4 {
+    background-image: url(./images/photo7);
+}
+.slide5 {
+    background-image: url(./images/photo5);
+}
+.slide6 {
+    background-image: url(./images/photo6);
+}
+
+.menu__button {
+    position: absolute;
+    top: 2%;
+    right: 10%;
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    transition: left 4s linear;
+    height: 100vh;
+    width: 100vw;
+    background-color: cyan;
+}
+
+.loader__container {
+    display: flex;
+}

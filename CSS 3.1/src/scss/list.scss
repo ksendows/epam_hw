@@ -1,0 +1,29 @@
+.list {
+    list-style: none;
+    font-size: 0.875rem;
+
+    &--compressed>.list__item {
+        padding: 0 0 0 20px;        
+    }
+    &__item {
+        position: relative;
+        padding: 0 0 0.875em 1.423em;
+        
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 0px;
+            width: 7px;
+            height: 7px;
+            background-color: black;
+            transform: rotate(45deg)
+        }
+    }
+    &__title {
+        padding-bottom: 1.2em;
+        font-size: 1.5rem;
+        line-height: 1.25em;
+    }
+}

@@ -1,0 +1,51 @@
+.price-list {
+    
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.9375em 0 1.25em;
+        font-size: 3rem; 
+        line-height: 1em;
+        text-align: center;
+        
+        &::before, &::after {
+            content: "";
+            display: block;
+            width: 17%;
+            height: 0;
+            border: 1px solid black;
+        }
+        &::after {
+            left: 50px;
+        }
+        @media screen and (max-width: 860px) {
+            font-size: 2.5rem; 
+        }
+        @media screen and (max-width: 720px) {
+            font-size: 2.3em; 
+        }
+        @media screen and (max-width: 580px) {
+            font-size: 2rem; 
+        }
+        @media screen and (max-width: 450px) {
+            font-size: 1.8rem; 
+        }
+    }
+
+    &__title {
+        padding-bottom: 1.125em;
+        width: 65%;
+        font-size: 1.5rem;
+        line-height: 1.333em;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 1.25rem; 
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 1.125rem; 
+        } 
+    }
+}

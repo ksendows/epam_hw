@@ -1,0 +1,32 @@
+.radio {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px; 
+    margin-right: 12px;
+    border: 2px solid black;  
+    border-radius: 50%;
+    
+    &__circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 30%;
+        background-color: black;
+    }
+    &__element {
+        display: none;
+
+        &:not(:checked)+.radio>.radio__circle {
+            display: none;
+        }
+    }
+    &__label {
+        padding: 0 0 21px 44px;
+        line-height: 18px;
+    }
+}

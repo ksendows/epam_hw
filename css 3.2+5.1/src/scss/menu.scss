@@ -1,0 +1,70 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 5px;
+
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+        &--italic {
+            font-style: italic;
+        }
+        &--small {
+            font-size: 0.8em;
+        }
+    }
+    &__mobile--close {        
+        @media (max-width: 768px) {
+            display: none;
+        }   
+    }
+
+    &__mobile--open {        
+        @media (max-width: 768px) {
+            position: absolute;
+            right: 20px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 0;
+            background-image: url('../images/vector-old-paper-texture-background.jpg');
+            background-size: cover;
+            z-index: 40;
+        }
+        @media (max-width: 500px) {
+            width: 92%;
+            margin-right: 20px;
+            right: 0;
+        }
+        &>.menu__item {
+                padding: 10px;    
+        }   
+    }
+    &__burger {
+        display: none;
+        position: absolute;
+        top: 3%;
+        right: 4%;
+        width: 50px;
+        height: 40px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+        @media (max-width: 500px) {
+            top: 1%;
+            height: 27px;
+        }
+    }
+}

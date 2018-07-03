@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS 3.1_Barbershop</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body class="background--white">
+    //= templates/header.html
+    <main class="main">
+        <h2 class="navigation__heading">набор для путешествий «Baxter of California»</h2>
+        <div class="navigation">
+            <a href="/html/index.html" class="navigation__point">ГЛАВНАЯ</a>
+            <!-- <div class="navigation__separator"></div> -->
+            <a href="/html/shop.html" class="navigation__point">МАГАЗИН</a>
+            <!-- <div class="navigation__separator"></div> -->
+            <a href="/html/shop.html" class="navigation__point">СРЕДСТВА ДЛЯ УХОДА</a>
+            <!-- <div class="navigation__separator"></div> -->
+            <a href="#" class="navigation__point blocked">набор для путешествий «Baxter of California»</a>
+        </div>
+        <div class="container shop-item__container">
+            <div class="container__column shop-item__column slider">
+                <img src="../images/shop-item-big.png" alt="product" class="shop-item__image shop-item__image--big" />
+                <button class="slider__arrow slider__arrow--left"></button>
+                <button class="slider__arrow slider__arrow--right"></button>
+                <div class="shop-item__gallery">
+                    <img src="../images/shop-item1.png" alt="product" class="shop-item__image shop-item__image--small" />
+                    <img src="../images/shop-item2.png" alt="product" class="shop-item__image shop-item__image--small" />
+                    <img src="../images/shop-item3.png" alt="product" class="shop-item__image shop-item__image--small" />
+                </div>
+            </div> 
+            
+            <div class="container__column shop-item__column--right">
+                <div class="shop-item__info">
+                    <p class="shop-item__availability">есть в наличии</p>
+                    <p class="shop-item__code blocked">Артикул: dexter-ae</p>
+                </div>
+                <p class="shop-item__text">
+                     Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для
+                    бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем
+                    после бритья, шампунь. Набор также может стать отличным подарком.
+                </p>
+                <div class="shop-item__price price__wrapper">
+                    <div class="price__value">2 900 РУБ.</div>
+                    <button class="button button--short price__button">КУПИТЬ</button>
+                </div>
+                <h3 class="list__title">В набор входят:</h3>
+                <ul class="shop-item__list list list--compressed">
+                    <li class="list__item">Средство для умывания (50 мл)</li>
+                    <li class="list__item">Увлажняющий крем (50 мл)</li>
+                    <li class="list__item">Крем для бритья (50 мл)</li>
+                    <li class="list__item">Крем после бритья, шампунь (50 мл)</li>
+                    <li class="list__item">Удобная кожаная косметичка</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    //= templates/footer.html
+    <div class="blackout"></div>
+    
+    <script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Bespoke-ATOjFOIw6u;
+    src: url(../fonts/Bespoke-ATOjFOIw6u.ttf);
+}
+.wrapper {
+    padding: 0 20px 40px;
+    background-image: url('../images/vector-old-paper-texture-background.jpg');
+    background-size: cover;
+}
+.title, .subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-family: Bespoke-ATOjFOIw6u;
+}
+.title {
+    font-size: 5em;
+    border-bottom: 2px solid black;
+
+    @media screen and (max-width: 768px){
+        font-size: 3em;    
+    }
+    @media screen and (max-width: 450px){
+        font-size: 2em;    
+    }
+}
+.subtitle {
+    font-size: 2em;
+
+    @media screen and (max-width: 768px){
+        font-size: 1em;    
+    }
+}
+

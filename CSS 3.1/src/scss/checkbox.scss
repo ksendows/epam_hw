@@ -1,0 +1,33 @@
+@import "variables";
+.checkbox {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin-right: 23px;
+    border: 2px solid black;
+
+    &:active, &:hover, &:focus {
+        color: $color-brown;
+    }
+    &__element {
+        display: none;
+
+        &:not(:checked)+.checkbox>.checkbox__axis{
+        display: none;
+        }
+    }
+    &__axis {
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        width: 17px;
+        transform: rotate(45deg);
+        border-bottom: 2px solid #000;
+    
+        &--cross {
+            transform: rotate(135deg);
+        }
+    }
+}

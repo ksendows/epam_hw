@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS 3.1_Barbershop</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body class="background--white">
+    //= templates/header.html
+    <main class="main">
+        <h2 class="navigation__heading">ПРАЙС-ЛИСТ</h2>
+        <div class="navigation">
+            <a href="/html/index.html" class="navigation__point">ГЛАВНАЯ</a>
+            <div class="navigation__separator"></div>
+            <a href="#" class="navigation__point blocked">ПРАЙС-ЛИСТ</a>
+        </div>
+        <h1 class="price-list__heading">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
+        <div class="container">
+            <div class="container__column">
+                <h3 class="price-list__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
+                <ul class="list">
+                    <li class="list__item">Baxter of California</li>
+                    <li class="list__item">Mr Natty</li>
+                    <li class="list__item">Suavecito</li>
+                    <li class="list__item">Malin+Goetz</li>
+                </ul>
+            </div>
+            <div class="container__column price__column--right">
+                <h3 class="price-list__title">ЦЕНЫ НА УСЛУГИ НАШИХ&nbsp;МАСТЕРОВ:</h3>
+                <table class="table">
+                    <tbody>
+                        <tr class="table__tr">
+                            <td class="table__td">СТРИЖКА</td>
+                            <td class="table__td table__td--centered">1500 Р.</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">СТРИЖКА БОРОДЫ</td>
+                            <td class="table__td table__td--centered">500 Р.</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">НАКРУТКА УСОВ</td>
+                            <td class="table__td table__td--centered">350 Р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3 class="price-list__title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
+        <div class="container">
+            <div class="container__column">
+                <p class="text">
+                    Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная
+                    до мелочей работа. Мы не работаем на количество, мы делаем качество.
+                </p>
+            </div>
+            <div class="container__column container__column--right price__column--right">
+                <p class="text">
+                    Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв.
+                    Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+                </p>
+            </div>
+        </div>
+    </main>
+    //= templates/footer.html
+    <div class="blackout"></div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

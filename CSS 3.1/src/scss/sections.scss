@@ -1,0 +1,98 @@
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 57px 7.6% 49px 8.7%;
+    margin-bottom: 35px;
+    
+    @media screen and (max-width: 767px){
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    &__item {
+        width: 48%;
+        
+        @media screen and (max-width: 767px){
+            width: 100%;
+            margin-bottom: 40px;
+        }       
+        &--right {
+            width: 39%;
+
+            @media screen and (max-width: 1024px){
+                width: 44%;
+            }
+        }
+    }
+    &__header {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.9rem;
+        padding-bottom: 0.9em;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 580px) {
+            font-size: 1.4rem;
+        }
+    }
+    &__separator {
+        position: absolute;
+        left: 49.5%;
+        top: 16%;
+
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+    &__text {
+        padding-bottom: 21px;
+                
+        &>.contacts__tel, &>.contacts__adress {
+            color: black;
+        }
+        &--right {
+            padding-bottom: 13px;
+            
+            @media (max-width: 768px) and (min-width: 400px){
+                text-align: right;
+            }            
+        }
+    }
+    &__time {
+        text-transform: lowercase;
+    }
+    &__column {
+        @media (max-width: 768px) and (min-width: 400px) {
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+        }
+        &>.section__text{
+            @media (max-width: 768px) and (min-width: 400px){
+                width: 50%;
+            }
+        }
+    }
+}
+.gallery {
+    text-align: center;
+
+    &__image {
+        max-width: 100%;
+        padding: 7px;
+        margin: 0 0 31px -10px;
+        background-color: #ffffff;
+    }
+}
+.form-record {
+    
+    &__input {
+        @media screen and (max-width: 820px){
+            width: 100%;    
+        }
+    }
+}
