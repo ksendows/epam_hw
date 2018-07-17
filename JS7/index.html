@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <button id="button" class="button">Загрузить phones.json!</button>
+
+  <input type="text" id="search" placeholder="Search here..."></input>
+
+  <button id="openModalBtn" class="button">Open Modal</button>
+
+  <div id="authModal" class="modal">
+            <form class="form">
+              <span class="close">&times;</span>
+              <div class="inputs_container">
+                <label for="login" class="label">
+                  <span class="input_title">Login(email):</span>
+                  <input type="text" id="login" name="login"/>
+                </label>
+                <label for="password" class="label">
+                  <span class="input_title">Password:</span>
+                  <input type="password" id="password" name="password" minLength="6" placeholder="6 characters minimum" />
+                </label>
+              </div>
+              <Button id="loginBtn" class="button">Log in</Button>
+            </form>
+    </div>
+  </div>
+
+  <ol id="list"></ol>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
